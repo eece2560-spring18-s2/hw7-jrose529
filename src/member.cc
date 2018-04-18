@@ -17,7 +17,26 @@ void Member::DumpConnections() {
 }
 
 void Member::PathToMemberBFS(uint64_t dst_member_id) {
-  // Fill in your code here.
+  // Fill in your code here
+//   this->color = COLOR_GRAY;
+//   this->key = 0;
+//   this->parent = NULL;
+  
+//   std::queue<Member*> q;
+  
+//   q.push(this);
+  
+//     while (!q.empty()){
+//     auto u = q.front();
+//     q.pop();
+//     for (auto it = connecting_members.begin(); it!=connecting_members.end(); it++) {
+//         it->second.dst->color = COLOR_GRAY;
+//         it->second.dst->key = this->key + 1;
+//         it->second.dst->parent = this;
+//         q.push(it->second.dst);
+//     }
+//     u->color = COLOR_BLACK;
+//   } 
 }
 
 void Member::PathToMemberIDDFS(uint64_t dst_member_id) {
